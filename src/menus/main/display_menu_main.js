@@ -41,7 +41,7 @@ function Display_menu_main()
 		GV.menu = Menus.LEVEL_SELECT;
 
 		ctx.strokeStyle = CP.black;
-	button_data = Draw_button("Instruction", 0, 600, canvas.width, 200,
+	button_data = Draw_button("Instructions", 0, 600, canvas.width, 200,
 		60, 120);
 	if (button_data.Touched)
 	{
