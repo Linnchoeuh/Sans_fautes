@@ -25,6 +25,7 @@ class LinkClass
 
 	displayLinks()
 	{
+		ctx.strokeStyle = CP.white;
 		ctx.drawImage(this.link_1_img, canvas.width - 75, 5, 30, 30)
 		if (Draw_button("", canvas.width - 75, 5, 30, 30).Triggered)
 			window.open(this.link_1);
