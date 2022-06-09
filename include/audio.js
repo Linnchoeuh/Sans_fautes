@@ -31,23 +31,23 @@ class AudioClass
 		{
 			if (this.play_loose)
 			{
-				//this.Main.pause();
-				//this.Main.currentTime = 0;
-				//this.Loose.play();
+				this.Main.pause();
+				this.Main.currentTime = 0;
+				this.Loose.play();
 			}
 			else
 			{
-				//this.Loose.pause();
-				//this.Loose.currentTime = 0;
-				//this.Main.play();
+				this.Loose.pause();
+				this.Loose.currentTime = 0;
+				this.Main.play();
 			}
 		}
 		else
 		{
-			//this.Main.pause();
-			//this.Main.currentTime = 0;
-			//this.Loose.pause();
-			//this.Loose.currentTime = 0;
+			this.Main.pause();
+			this.Main.currentTime = 0;
+			this.Loose.pause();
+			this.Loose.currentTime = 0;
 		}
 	}
 
@@ -60,10 +60,12 @@ class AudioClass
 			else
 				this.play = true;
 		}
+		/*
 		if (this.play)
 			ctx.drawImage(this.unmuted_icon, canvas.width - 35, 5, 30, 30)
 		else
 			ctx.drawImage(this.muted_icon, canvas.width - 35, 5, 30, 30)
+		*/
 	}
 }
 
