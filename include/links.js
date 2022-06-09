@@ -9,7 +9,7 @@
 */
 
 import {canvas, ctx} from "../main.js"
-import { Set_mouse_area } from "./tools.js";
+import { Draw_button} from "./tools.js";
 
 class LinkClass
 {
@@ -25,11 +25,11 @@ class LinkClass
 
 	displayLinks()
 	{
-		ctx.drawImage(this.link_1_img, canvas.width - 75, 5, 30, 30)
-		if (Set_mouse_area(canvas.width - 75, 5, 30, 30).Triggered)
+		// ctx.drawImage(this.link_1_img, canvas.width - 75, 5, 30, 30)
+		if (Draw_button("", canvas.width - 75, 5, 30, 30).Triggered)
 			window.open(this.link_1);
-		ctx.drawImage(this.link_2_img, canvas.width - 115, 5, 30, 30)
-		if (Set_mouse_area(canvas.width - 115, 5, 30, 30).Triggered)
+		// ctx.drawImage(this.link_2_img, canvas.width - 115, 5, 30, 30)
+		if (Draw_button("", canvas.width - 115, 5, 30, 30).Triggered)
 			window.open(this.link_2);
 	}
 }
