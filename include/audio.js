@@ -15,14 +15,14 @@ class AudioClass
 {
 	constructor()
 	{
-		this.Main = new Audio("../audio/main_music.mp3");
-		this.Loose = new Audio("../audio/loose_music.mp3");
+		this.Main = new Audio("audio/music/main_music.mp3");
+		this.Loose = new Audio("audio/music/loose_music.mp3");
 		this.play_loose = false;
 		this.play = true;
 		this.unmuted_icon = new Image()
-		this.unmuted_icon.src = "../graphics/gui/unmuted_icon.png"
+		this.unmuted_icon.src = "graphics/gui/unmuted_icon.png"
 		this.muted_icon = new Image()
-		this.muted_icon.src = "../graphics/gui/muted_icon.png"
+		this.muted_icon.src = "graphics/gui/muted_icon.png"
 	}
 
 	updateAudio()
@@ -60,12 +60,10 @@ class AudioClass
 			else
 				this.play = true;
 		}
-		/*
 		if (this.play)
-			ctx.drawImage(this.unmuted_icon, canvas.width - 35, 5, 30, 30)
+			ctx.drawImage(this.unmuted_icon, canvas.width - 35, 5, 30, 30);
 		else
-			ctx.drawImage(this.muted_icon, canvas.width - 35, 5, 30, 30)
-		*/
+			ctx.drawImage(this.muted_icon, canvas.width - 35, 5, 30, 30);
 	}
 }
 

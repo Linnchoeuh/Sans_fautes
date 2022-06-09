@@ -13,7 +13,8 @@ import {canvas, ctx} from "../../../main.js"
 import {Draw_button, Set_mouse_area, load_image} from "../../../include/tools.js";
 import { Audios } from "../../../include/audio.js";
 import {Insert_text_in_rect} from "../../../include/tools.js";
-let send_icon = load_image("../../../graphics/gui/send_icon.png")
+
+let send_icon = load_image("graphics/gui/send_icon.png")
 let Dialog;
 let delay;
 
@@ -74,7 +75,7 @@ function draw_down_UI()
 	ctx.fillStyle = CP.white;
 	ctx.fillRect(15, textbox_pos + 10, canvas.width - 100, tmp_value - 10);
 	ctx.strokeRect(15, textbox_pos + 10, canvas.width - 100, tmp_value - 10);
-	//ctx.drawImage(send_icon, canvas.width - 50, textbox_pos + 5, 40, 40);
+	ctx.drawImage(send_icon, canvas.width - 50, textbox_pos + 5, 40, 40);
 }
 
 function draw_UI(Dialog, delay)
