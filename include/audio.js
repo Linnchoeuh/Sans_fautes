@@ -15,8 +15,8 @@ class AudioClass
 {
 	constructor()
 	{
-		this.Main = new Audio("../audio/music/main_music.mp3");
-		this.Loose = new Audio("../audio/music/loose_music.mp3");
+		this.Main = new Audio("../audio/main_music.mp3");
+		this.Loose = new Audio("../audio/loose_music.mp3");
 		this.play_loose = false;
 		this.play = true;
 		this.unmuted_icon = new Image()
