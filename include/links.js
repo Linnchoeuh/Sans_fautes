@@ -9,6 +9,7 @@
 */
 
 import {canvas, ctx} from "../main.js"
+import { ColorPalette as CP } from "./struct.js";
 import { Draw_button} from "./tools.js";
 
 class LinkClass
