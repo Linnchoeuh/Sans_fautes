@@ -18,7 +18,7 @@ let HistoryInstruction = new DiscussionHistory();
 HistoryInstruction.header_offset = 50;
 HistoryInstruction.displayable_part = 800;
 
-HistoryInstruction.addMessage("INSTRUCTION", 1);
+HistoryInstruction.addMessage("INSTRUCTIONS", 1);
 HistoryInstruction.addMessage("NAVIGATION", 0);
 HistoryInstruction.addMessage("Utilisez les flèches du clavier pour vous balader dans ce menu mais aussi pendant le jeu pour vous balader dans la conversation", 1);
 HistoryInstruction.addMessage("BUT DU JEU", 0);
